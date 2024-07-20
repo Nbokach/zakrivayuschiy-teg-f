@@ -4,3 +4,92 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --fone-gradient: 
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --reserv-color: #ffffff;
+  --back-color: #ffffff;
+  --font-color: #000000;
+  --border: #000000;
+  --button-text: #ffffff;
+  --font-text: "Press Start 2P";
+  --font-text-content: "Inter";
+  --font-subheader: 700;
+  --font-item: 400;
+  --heart: url("../svg/whitetored/initial.svg");
+  --disk: #000000;
+  --popover-font: #000000;
+  --popover-fone: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fone-gradient: 
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    --reserv-color: #ffffff;
+    --back-color: #ffffff;
+    --font-color: #000000;
+    --border: #000000;
+    --button-text: #ffffff;
+    --font-text: "Press Start 2P";
+    --font-text-content: "Inter";
+    --font-subheader: 700;
+    --font-item: 400;
+    --heart: url("../svg/whitetored/initial.svg");
+    --disk: #000000;
+    --popover-font: #000000;
+    --popover-fone: #ffffff;
+  }
+}
+
+:root.theme-dark {
+  --fone-gradient: repeating-linear-gradient(
+      to right,
+      #000 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --reserv-color: #000000;
+  --back-color: #000000;
+  --font-color: #00cc14;
+  --border: #00cc14;
+  --button-text: #00cc14;
+  --font-text: "Press Start 2P";
+  --font-text-content: "Inter";
+  --font-subheader: 785;
+  --font-item: 465;
+  --heart: url("../svg/whitetored/greenheart.svg");
+  --disk: #00cc14;
+  --popover-font: #00cc14;
+  --popover-fone: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fone-gradient: repeating-linear-gradient(
+        to right,
+        #000 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+    --reserv-color: #000000;
+    --back-color: #000000;
+    --font-color: #00cc14;
+    --border: #00cc14;
+    --button-text: #00cc14;
+    --font-text: "Press Start 2P";
+    --font-text-content: "Inter";
+    --font-subheader: 785;
+    --font-item: 465;
+    --heart: url("../svg/whitetored/greenheart.svg");
+    --disk: #00cc14;
+    --popover-font: #00cc14;
+    --popover-fone: #000000;
+  }
+}
