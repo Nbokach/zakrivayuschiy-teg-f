@@ -1,22 +1,22 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --fone-gradient: 
-      repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-      repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-      linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-    --reserv-color: #ffffff;
-    --back-color: #ffffff;
-    --font-color: #000000;
-    --border: #000000;
-    --button-text: #ffffff;
-    --font-text: "Press Start 2P";
-    --font-text-content: "Inter";
-    --font-subheader: 700;
-    --font-item: 400;
-    --heart: url("../svg/whitetored/initial.svg");
-    --disk: #000000;
-    --popover-font: #000000;
-    --popover-fone: #ffffff;
-  }
-  
-
+  --fone-gradient: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --reserv-color: #ffffff;
+  --back-color: #ffffff;
+  --font-color: #000000;
+  --border: #000000;
+  --button-text: #ffffff;
+  --font-text: "Press Start 2P";
+  --font-text-content: "Inter";
+  --font-subheader: 700;
+  --font-item: 400;
+  --heart: url("../svg/whitetored/initial.svg");
+  --disk: #000000;
+  --popover-font: #000000;
+  --popover-fone: #ffffff;
+}

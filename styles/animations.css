@@ -51,6 +51,7 @@
 }
 
 /*При удержании*/
+
 .like-icon:active .core {
   fill: #FF0000; 
   transition: fill 0.3s linear;
