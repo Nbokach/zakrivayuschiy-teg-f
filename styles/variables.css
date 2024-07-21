@@ -1,5 +1,5 @@
 :root {
-  --fone-gradient: repeating-linear-gradient(
+  --background-gradient: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
       rgb(0 0 0 / 0) 2px 4px
@@ -15,8 +15,8 @@
   --font-text-content: "Inter";
   --font-subheader: 700;
   --font-item: 400;
-  --heart: url("../svg/whitetored/initial.svg");
   --disk: #000000;
   --popover-font: #000000;
   --popover-fone: #ffffff;
+  --heart-color: #ff0000;
 }

@@ -16,7 +16,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: var(--fone-gradient);
+  background-image: var(--background-gradient);
   background-color: var(--reserv-color);
   background-attachment: fixed;
   background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .head__title {
-  font-family: var(--font-text);
+  font-family: var(--font-text), sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -152,6 +152,7 @@
 .wrapper {
   display: flex;
   position: relative;
+  outline: 2px solid var(--font-color);
 }
 
 .label {
@@ -201,10 +202,6 @@
   object-position: center;
 }
 
-.foto-border {
-  outline: 2px solid var(--font-color);
-}
-
 .text {
   font-family: var(--font-text-content), sans-serif;
   font-variation-settings: "wght" var(--font-item);
@@ -213,7 +210,7 @@
 }
 
 .info {
-  padding: 25px ;
+  padding: 25px;
 }
 
 .item {
@@ -313,14 +310,20 @@
 
 .footer__popover {
   width: 340px;
-  height: 195px;
-  position: fixed;
+  gap: 30px;
+  padding: 30px;
   margin: auto;
   border: 2px solid var(--popover-font);
   background-color: var(--popover-fone);
   color: var(--popover-font);
   font-family: var(--font-text), sans-serif;
   text-transform: uppercase;
+}
+
+.footer__popover:active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footer__popover::backdrop {
@@ -330,8 +333,8 @@
 .modal {
   display: flex;
   align-items: center;
-  gap: 19px;
-  margin: 5px 0 17px 26px;
+  max-height: 65px;
+  gap: 20px;
 }
 
 .modal-icon-dialog {
@@ -348,19 +351,14 @@
 }
 
 .card__popover-button {
-  margin-left: 23px;
-  width: 258px;
-  height: 37px;
+  min-width: 280px;
+  min-height: 38px;
 }
 
 @media (max-width: 376px) {
   .header {
     margin: 102px auto 0 auto;
     padding: 120px 14px 25px 14px;
-  }
-
-  .header .ahead {
-    margin-bottom: 19px;
   }
 
   .header__theme-menu {
@@ -406,19 +404,22 @@
     height: 85px;
   }
 
+  .footer__popover {
+    padding: 30px 42px;
+  }
+
   .modal-icon {
     margin: 0;
     width: 28px;
     height: 28px;
   }
 
-  .modal {
-    margin: 3px 0 19px 24px;
-    gap: 21px;
+  .card__popover-button {
+    min-width: 257px;
   }
 
   .modal-icon-dialog {
     width: 81px;
-    height: 84px;
+    min-height: 84px;
   }
 }
